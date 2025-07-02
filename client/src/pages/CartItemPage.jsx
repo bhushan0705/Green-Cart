@@ -64,7 +64,7 @@ const CartItemPage = () => {
         totalAmount,
       };
 
-      const res = await axios.post('http://localhost:8080/api/order/place', orderData);
+      const res = await axios.post('https://green-cart-backend-onep.onrender.com/api/order/place', orderData);
 
       if (res.status === 201) {
         toast.success('Order placed successfully!');
