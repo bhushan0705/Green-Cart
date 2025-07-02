@@ -9,10 +9,15 @@ db()
 // 🧠 Middleware
 app.use(express.json());
 // app.use(cors({ origin: "http://localhost:5173", methods: ["POST", "GET"] }));  // org 
+// app.use(cors({
+//   origin: "https://green-cart-frontend-kqx3.onrender.com",
+//   methods: ["POST", "GET"],
+//   credentials: true  // optional
+// }));
+
 app.use(cors({
-  origin: "https://green-cart-frontend-kqx3.onrender.com",
-  methods: ["POST", "GET"],
-  credentials: true  // optional
+  origin: ['https://green-cart-frontend-kqx3.onrender.com'], // allow deployed frontend
+  credentials: true,
 }));
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
