@@ -17,7 +17,7 @@ const AllProductItems = () => {
   useEffect(() => {
     if (all.length === 0) {
       axios
-        .get("http://localhost:8080/router/products")
+        .get("https://green-cart-backend-onep.onrender.com/router/products")
         .then((res) => dispatch(setAllProducts(res.data)))
         .catch((err) => console.error("Error fetching products:", err));
     }
