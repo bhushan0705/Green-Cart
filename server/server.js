@@ -16,8 +16,10 @@ app.use(express.json());
 // }));
 
 app.use(cors({
-  origin: ['https://green-cart-frontend-kqx3.onrender.com'], // allow deployed frontend
+  origin: ['https://green-cart-frontend-kqx3.onrender.com'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   credentials: true,
+  optionsSuccessStatus: 200
 }));
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
