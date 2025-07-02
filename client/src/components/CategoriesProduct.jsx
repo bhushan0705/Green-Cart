@@ -8,7 +8,6 @@ import {
 } from "../Redux/slices/productSlice";
 import { categories, dummyProducts } from "../assets/assets";
 import axios from "axios";
-import { url } from "../constant/constant";
 
 const CategoriesProduct = () => {
   const navigate = useNavigate();
@@ -17,7 +16,7 @@ const CategoriesProduct = () => {
 
   const handleCategoryClick = (category, element) => {
     axios
-      .get(`${url}/router/products`)
+      .get(`http://localhost:8080/router/products`)
       .then((res) => {
         const allProducts = res.data;
         const filteredProducts = allProducts.filter(
