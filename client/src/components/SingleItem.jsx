@@ -15,7 +15,7 @@ function SingleItem() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get(`http://localhost:8080/router/products`)
+    axios.get(`https://green-cart-backend-onep.onrender.com/router/products`)
       .then(res => {
         const foundProduct = res.data.find(p => p._id === id);
         setProduct(foundProduct);
