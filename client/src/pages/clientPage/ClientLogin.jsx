@@ -15,8 +15,8 @@ const ClientLogin = () => {
 
     const url =
       state === "login"
-        ? `http://localhost:8080/login`
-        : `http://localhost:8080/signup`;
+        ? `https://green-cart-backend-onep.onrender.com/login`
+        : `https://green-cart-backend-onep.onrender.com/signup`;
 
     const payload =
       state === "login" ? { email, password } : { name, email, password };
