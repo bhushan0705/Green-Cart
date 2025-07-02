@@ -28,7 +28,7 @@ app.use('/api', orderRoutes);               // for orders
 app.use('/seller', sellerRoutes);           // image & product upload
 
 // 🚀 Start Server
-const PORT = 8080;
+const PORT =  process.env.PORT || 8080;
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
