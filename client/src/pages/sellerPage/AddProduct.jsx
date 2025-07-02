@@ -39,7 +39,7 @@ const AddProduct = () => {
 
     setLoading(true);
     try {
-      const res = await axios.post('http://localhost:8080/seller/upload', data);
+      const res = await axios.post('https://green-cart-backend-onep.onrender.com/seller/upload', data);
       // console.log("✅ Product Uploaded:", res.data);
       alert("Product added successfully!");
 
