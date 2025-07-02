@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap'); */
+
+body{
+      font-family: "Outfit", sans-serif;
+}
+
+
+/* @layer components {
+  .styled-input {
+    @apply px-4 py-2 border border-gray-300 rounded-md shadow-sm outline-none transition duration-200 
+           focus:ring-2 focus:ring-indigo-400 focus:border-indigo-500 bg-white text-gray-700 placeholder-gray-400;
+  }
+} */
