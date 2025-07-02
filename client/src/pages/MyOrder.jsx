@@ -6,7 +6,7 @@ const MyOrder = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/api/order/place')
+    axios.get('https://green-cart-backend-onep.onrender.com/api/order/place')
       .then(res => {
         setOrders(res.data);
         setLoading(false);
