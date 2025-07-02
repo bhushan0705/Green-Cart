@@ -7,7 +7,7 @@ const ProductList = () => {
 
   useEffect(()=>{
     const productAllData =async()=>{
-        const result = await axios.get('http://localhost:8080/router/products')
+        const result = await axios.get('https://green-cart-backend-onep.onrender.com/router/products')
         setProducts(result.data)
     }
     productAllData()
