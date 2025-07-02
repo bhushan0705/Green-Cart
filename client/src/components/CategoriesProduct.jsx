@@ -16,7 +16,7 @@ const CategoriesProduct = () => {
 
   const handleCategoryClick = (category, element) => {
     axios
-      .get(`http://localhost:8080/router/products`)
+      .get(`https://green-cart-backend-onep.onrender.com/router/products`)
       .then((res) => {
         const allProducts = res.data;
         const filteredProducts = allProducts.filter(
